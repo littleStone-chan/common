@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.o2osys.tools</groupId>
+    <groupId>com.chen.tools</groupId>
     <artifactId>commons</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -15,7 +15,6 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <fasrjosn.version>1.2.47</fasrjosn.version>
-        <spring-cloud.version>2.0.1.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencies>
@@ -215,31 +214,6 @@
         </dependency>
     </dependencies>
 
-    <!-- 配置远程发布到私服，mvn deploy -->
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>localhost internal repository</name>
-            <url>http://192.168.0.122:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>localhost internal repository</name>
-            <url>http://192.168.0.122:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <!-- 从远处拉取代码 -->
-    <repositories>
-        <repository>
-            <id>maven-snapshots</id>
-            <name>maven repository switchboard</name>
-            <url>http://192.168.0.122:8081/repository/maven-public/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
     <build>
         <plugins>
             <!-- 要将源码放上去，需要加入这个插件 -->
