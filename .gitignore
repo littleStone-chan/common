@@ -1,0 +1,16 @@
+/target
+/bin
+/.settings
+/.classpath
+/.buildpath
+/.pydevproject
+/.project
+/.idea
+*.iml
+*.ipr
+*.iws
+/.externalToolBuilders
+/.git
+.DS_Store
+/src/main/webapp/WEB-INF/work
+/src/main/webapp/tmp
